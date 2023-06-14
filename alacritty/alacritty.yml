@@ -37,14 +37,3 @@ font:
 
 key_bindings:
   - { key: Return, mods: Super|Shift, action: SpawnNewInstance }
-  # Conflict with my TMUX window navigation
-  # - { key: Key0, mods: Alt, action: None }
-  # - { key: Key1, mods: Alt, action: None }
-  # - { key: Key2, mods: Alt, action: None }
-  # - { key: Key3, mods: Alt, action: None }
-  # - { key: Key4, mods: Alt, action: None }
-  # - { key: Key5, mods: Alt, action: None }
-  # - { key: Key6, mods: Alt, action: None }
-  # - { key: Key7, mods: Alt, action: None }
-  # - { key: Key8, mods: Alt, action: None }
-  # - { key: Key9, mods: Alt, action: None }
