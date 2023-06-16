@@ -10,8 +10,6 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 # Check if HDMI-2 is connected
 if [[ $(xrandr -q | grep 'HDMI-2 connected') ]]; then
     polybar --reload bspwm-external -c $HOME/.config/polybar/config.ini &
-fi
-
-if [[ $(xrandr -q | grep 'eDP-1 connected') ]]; then
+else
     polybar --reload bspwm-laptop -c $HOME/.config/polybar/config.ini &
 fi
