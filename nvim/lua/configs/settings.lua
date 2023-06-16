@@ -71,6 +71,7 @@ vim.api.nvim_exec([[
   augroup END
 ]], false)
 
+
 function CheckDir()
   local bufnr = vim.api.nvim_get_current_buf()
   local bufname = vim.api.nvim_buf_get_name(bufnr)
