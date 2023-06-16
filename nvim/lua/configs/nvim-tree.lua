@@ -8,12 +8,13 @@ require("nvim-tree").setup({
   filters = {
     dotfiles = true,
   },
+  update_cwd = false,
 })
 
-local function open_nvim_tree()
-
-  -- open the tree
-  require("nvim-tree.api").tree.open()
-end
+-- local function open_nvim_tree()
+-- 
+--   -- open the tree
+--   require("nvim-tree.api").tree.open()
+-- end
 
 -- vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_nvim_tree })
