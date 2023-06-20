@@ -1,6 +1,4 @@
-#
-# wm independent hotkeys
-#
+######################### Apps/Customized #########################
 
 # terminal emulator
 super + Return
@@ -9,6 +7,14 @@ super + Return
 # program launcher
 super + d
     rofi -show drun -show-icons
+
+# bluetooth
+super + b
+    $HOME/.config/rofi/rofi-bluetooth.sh
+
+# take selected screenshot
+super + s
+    maim -s | xclip -selection clipboard -t image/png -i
 
 # search for all windows
 super + w
@@ -53,8 +59,8 @@ super + g
 #
 
 # set the window state
-super + {t,shift + t,s,f}
- 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+# super + {t,shift + t,s,f}
+#  	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
 # set the node flags
 super + ctrl + {m,x,y,z}
