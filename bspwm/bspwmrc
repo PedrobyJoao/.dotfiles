@@ -29,6 +29,9 @@ bspc config gapless_monocle      true
 bspc config normal_border_color "#313244"
 bspc config focused_border_color "#7f849c"
 
+bspc rule -a Zoom desktop='^4'
+bspc rule -a Slack desktop='^3'
+
 $HOME/.fehbg &
 $HOME/.config/polybar/launch.sh &
 # picom -fb &
