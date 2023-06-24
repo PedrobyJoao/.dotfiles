@@ -34,4 +34,6 @@ bspc rule -a Slack desktop='^3'
 
 $HOME/.fehbg &
 $HOME/.config/polybar/launch.sh &
+exec xinput set-prop "PNP0C50:01 0911:5288 Touchpad" "libinput Tapping Enabled" 1
+
 # picom -fb &
