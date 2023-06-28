@@ -71,6 +71,9 @@ map('x', '<A-k>', ":move '<-2<CR>gv=gv")
 map('o', 'A', ':<C-U>normal! mzggVG<CR>`z')
 map('x', 'A', ':<C-U>normal! ggVG<CR>')
 
+---------------------- Open Custom apps ----------------------
+map('n', '<leader><C-g>', ':ChatGPT<CR>')
+
 ---------------------- Files ----------------------
 
 -- Easy access for file tree
