@@ -71,13 +71,19 @@ map('x', '<A-k>', ":move '<-2<CR>gv=gv")
 map('o', 'A', ':<C-U>normal! mzggVG<CR>`z')
 map('x', 'A', ':<C-U>normal! ggVG<CR>')
 
+---------------------- Open Custom apps ----------------------
+map('v', '<C-g>', ':<C-u>ChatGPTEditWithInstructions<CR>gv')
+map('n', '<C-g>', ':ChatGPTEditWithInstructions<CR>')
+map('v', '<C-p>', ':ChatGPTRun ')
+map('n', '<C-p>', ':ChatGPTRun ')
+
 ---------------------- Files ----------------------
 
 -- Easy access for file tree
 map('n', '<leader>e', ':NvimTreeFindFileToggle!<CR>')
 
 -- Close buffer
-map('n', '<leader>cb', ':bd<CR>')
+map('n', '<leader>c', ':bd<CR>')
 
 ---------------------- Windows and Buffers ----------------------
 
@@ -88,10 +94,10 @@ map("n", "<C-k>", "<C-w>k")
 map("n", "<C-l>", "<C-w>l")
 
 -- Resize with arrows
-map("n", "<C-Up>", ":resize -2<CR>")
-map("n", "<C-Down>", ":resize +2<CR>")
-map("n", "<C-Left>", ":vertical resize -2<CR>")
-map("n", "<C-Right>", ":vertical resize +2<CR>")
+map("n", "<C-A-j>", ":resize -2<CR>")
+map("n", "<C-A-k>", ":resize +2<CR>")
+map("n", "<C-A-l>", ":vertical resize -2<CR>")
+map("n", "<C-A-h>", ":vertical resize +2<CR>")
 
 -- Navigate buffers
 map("n", "<S-l>", ":bnext<CR>")
@@ -101,8 +107,8 @@ map("n", "<S-h>", ":bprevious<CR>")
 map('n', "''", '<CMD>b#<CR>')
 
 -- Copying the vscode behaviour of making tab splits
-map('n', '<C-\\>', '<CMD>vsplit<CR>')
-map('n', '<A-\\>', '<CMD>split<CR>')
+map('n', '<leader>b', '<CMD>vsplit<CR>')
+map('n', '<leader>\\', '<CMD>split<CR>')
 
 ---------------------- TMUX ----------------------
 
