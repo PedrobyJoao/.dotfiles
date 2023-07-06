@@ -2,8 +2,6 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-setxkbmap -layout us &
-
 $HOME/.config/scripts/home.sh &
 # source $HOME/.config/scripts/use_default_screen.sh &
 
@@ -15,8 +13,10 @@ if (xrandr --query | grep 'HDMI.* connected' | cut -d ' ' -f1); then
     bspc monitor HDMI-2 -d 1 2 3 4 5
     bspc monitor eDP-1 -d 6 7 8 9 10
     bspc wm --reorder-monitors HDMI-2 eDP-1
+    setxkbmap -layout us &
 else
     bspc monitor -d 1 2 3 4 5 6
+    setxkbmap -model abnt2 -layout br &
 fi
 
 bspc config border_width         2
