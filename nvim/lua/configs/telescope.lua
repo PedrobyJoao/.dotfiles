@@ -1,4 +1,24 @@
 local builtin = require('telescope.builtin')
+require('telescope').setup{
+    defaults = {
+        mappings = {
+            i = {
+				["<Esc>"] = builtin.close,
+                ["<C-k>"] = builtin.move_selection_previous,
+                ["<C-j>"] = builtin.move_selection_next,
+            },
+        },
+
+        layout_config = { 
+            height = 0.99,
+            width = 0.99,
+            mirror = true,
+            preview_cutoff = 1,
+        },
+
+    },
+}
+
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
 vim.keymap.set('n', '<leader>gf', builtin.git_files, {})
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
