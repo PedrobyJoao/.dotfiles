@@ -1,14 +1,18 @@
 local builtin = require('telescope.builtin')
+local actions = require('telescope.actions')
+
 require('telescope').setup{
     defaults = {
         mappings = {
+            n = {
+				["<leader>q"] = actions.close,
+            },
             i = {
-				["<Esc>"] = builtin.close,
-                ["<C-k>"] = builtin.move_selection_previous,
-                ["<C-j>"] = builtin.move_selection_next,
+				["<ESC>"] = actions.close,
+                ["<C-k>"] = actions.move_selection_previous,
+                ["<C-j>"] = actions.move_selection_next,
             },
         },
-
         layout_config = { 
             height = 0.99,
             width = 0.99,
