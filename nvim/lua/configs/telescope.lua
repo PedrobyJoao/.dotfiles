@@ -13,7 +13,7 @@ require('telescope').setup{
             height = 0.99,
             width = 0.99,
             mirror = true,
-            preview_cutoff = 1,
+            preview_width = 0.60,
         },
 
     },
