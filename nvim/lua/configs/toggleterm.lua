@@ -5,7 +5,7 @@ end
 
 toggleterm.setup({
 	size = 30,
-	open_mapping = [[<c-t>]],
+	open_mapping = [[<leader>t]],
 	hide_numbers = true,
 	shade_filetypes = {},
 	shade_terminals = true,
@@ -13,7 +13,7 @@ toggleterm.setup({
 	start_in_insert = true,
 	insert_mappings = true,
 	persist_size = true,
-	direction = "float",
+	direction = "tab",
 	close_on_exit = true,
 	shell = vim.o.shell,
 	float_opts = {

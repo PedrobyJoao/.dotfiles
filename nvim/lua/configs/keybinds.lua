@@ -43,7 +43,7 @@ map("n", "<S-Tab>", "<<")
 map("n", "<Tab>", ">>")
 
 -- Replace word where the cursor is
-map("n", "<leader>rc", [[:%s/\<<C-r><C-w>\>//gcI<Left><Left><Left><Left>]])
+map("n", "<leader>r", [[:%s/\<<C-r><C-w>\>//gIc<Left><Left><Left><Left>]])
 
 -- Quickly save the current buffer or all buffers
 map('n', '<leader>w', '<CMD>update<CR>')
