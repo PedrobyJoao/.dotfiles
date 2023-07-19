@@ -13,7 +13,6 @@ return require('packer').startup(function(use)
           require("chatgpt").setup()
         end,
         requires = {
-          "MunifTanjim/nui.nvim",
           "nvim-lua/plenary.nvim",
           "nvim-telescope/telescope.nvim"
         }
@@ -80,11 +79,6 @@ return require('packer').startup(function(use)
             'nvim-tree/nvim-web-devicons', -- optional, for file icons
         },
         tag = 'nightly' -- optional, updated every week. (see issue #1193)
-    }
-
-    use {
-        "windwp/nvim-autopairs",
-        config = function() require("nvim-autopairs").setup {} end
     }
 
 end)
