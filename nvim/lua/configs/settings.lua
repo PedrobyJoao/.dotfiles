@@ -56,14 +56,7 @@ vim.g.netrw_winsize = 25
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
--- Fix: Not opening the pathed directory
-vim.api.nvim_exec([[
-  augroup cdpwd
-    autocmd!
-    autocmd VimEnter * cd $PWD
-  augroup END
-]], false)
-
+-- Show cool message when entering nvim
 vim.api.nvim_exec([[
   augroup DirEnter
     autocmd!

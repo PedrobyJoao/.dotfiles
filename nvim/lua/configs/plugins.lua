@@ -13,6 +13,7 @@ return require('packer').startup(function(use)
           require("chatgpt").setup()
         end,
         requires = {
+          "MunifTanjim/nui.nvim",
           "nvim-lua/plenary.nvim",
           "nvim-telescope/telescope.nvim"
         }
