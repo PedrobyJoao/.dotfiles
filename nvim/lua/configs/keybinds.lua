@@ -71,6 +71,9 @@ map('x', '<A-k>', ":move '<-2<CR>gv=gv")
 map('o', 'A', ':<C-U>normal! mzggVG<CR>`z')
 map('x', 'A', ':<C-U>normal! ggVG<CR>')
 
+-- Open QuickFix list
+map('n', '<leader>lf', ':lua vim.diagnostic.setqflist()<CR>')
+
 ---------------------- Open Custom apps ----------------------
 map('v', '<C-g>', ':<C-u>ChatGPTEditWithInstructions<CR>gv')
 map('n', '<C-g>', ':ChatGPTEditWithInstructions<CR>')
