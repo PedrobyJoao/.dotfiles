@@ -115,10 +115,10 @@ map('n', '<leader>\\', '<CMD>split<CR>')
 
 ---------------------- TMUX ----------------------
 
-map('n', 'C-h', '<CMD>TmuxNavigateLeft<CR>')
-map('n', 'C-l', '<CMD>TmuxNavigateRight<CR>')
-map('n', 'C-j', '<CMD>TmuxNavigateDown<CR>')
-map('n', 'C-k', '<CMD>TmuxNavigateUp<CR>')
+-- map('n', 'C-h', '<CMD>TmuxNavigateLeft<CR>')
+-- map('n', 'C-l', '<CMD>TmuxNavigateRight<CR>')
+-- map('n', 'C-j', '<CMD>TmuxNavigateDown<CR>')
+-- map('n', 'C-k', '<CMD>TmuxNavigateUp<CR>')
 
 ---------------------- Style ----------------------
 -- Change colorscheme to text style
