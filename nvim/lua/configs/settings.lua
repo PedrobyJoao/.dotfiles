@@ -56,6 +56,9 @@ vim.g.netrw_winsize = 25
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+-- Codeium config. TODO: move to a separate setup file
+vim.g.codeium_no_map_tab = 1
+
 -- Show cool message when entering nvim
 vim.api.nvim_exec([[
   augroup DirEnter
