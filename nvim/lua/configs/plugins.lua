@@ -7,6 +7,16 @@ return require('packer').startup(function(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
 
+    -- visual buffers tabs
+    use {
+        'akinsho/bufferline.nvim',
+        config = function ()
+            require("bufferline").setup{}
+        end,
+        tag = "*",
+        requires = 'nvim-tree/nvim-web-devicons',
+    }
+
     use({
       "jackMort/ChatGPT.nvim",
         config = function()
