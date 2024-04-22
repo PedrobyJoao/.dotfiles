@@ -1,6 +1,7 @@
-function ColorMyPencils(color)
-	color = color or "duskfox"
-	vim.cmd.colorscheme(color)
+function ColorMyPencils()
+    -- vim.o.background = "light"
+	-- vim.cmd.colorscheme("gruvbox")
+	-- color = color or "duskfox"
 end
 
 ColorMyPencils()
