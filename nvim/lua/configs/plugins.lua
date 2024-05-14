@@ -35,7 +35,14 @@ return require('packer').startup(function(use)
 
     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
 
+    -- colors
     use "EdenEast/nightfox.nvim"
+    use {
+        "ellisonleao/gruvbox.nvim",
+        config = function()
+            require("gruvbox").setup()
+        end,
+    }
 
     -- Cmp 
     use { "hrsh7th/nvim-cmp", commit = "b0dff0ec4f2748626aae13f011d1a47071fe9abc" } -- The completion plugin
